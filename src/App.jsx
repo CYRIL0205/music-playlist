@@ -13,7 +13,7 @@ function App() {
       <h2>Your Weekly mix, picked just for you</h2>
     </section>
 
-    <section>
+    <section id="playlist">
       <h3>1. Dilaw – Maki</h3>
       <h3>2. Multo – Cup of Joe</h3>
       <h3>3. sining – Dionela feat. Jay R</h3>

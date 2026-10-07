@@ -1,3 +1,7 @@
+*{
+    background-color: black;
+}
+
 section{
     background-color: black;
     padding: 30px;
@@ -8,6 +12,7 @@ section{
 section > svg{
     width: 100px;
     margin-top: 0px;
+    margin-left: 650px;
     color: white
 }
 
@@ -30,4 +35,10 @@ section > h3 {
     margin: 10px;
     border-radius: 10px;
 
+}
+
+#playlist{
+    width: 500px;
+    text-align: center;
+    margin: auto;
 }
