@@ -28,5 +28,6 @@ section > h3 {
     background-color: lightgrey;
     padding: 10px;
     margin: 10px;
+    border-radius: 10px;
 
 }
