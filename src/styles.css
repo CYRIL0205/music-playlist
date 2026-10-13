@@ -1,44 +1,126 @@
-*{
-    background-color: black;
+* {
+    box-sizing: border-box;
 }
 
-section{
-    background-color: black;
-    padding: 30px;
-    
-
+body {
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
-section > svg{
-    width: 100px;
-    margin-top: 0px;
-    margin-left: 650px;
-    color: white
-}
-
-section > h1{
-    font-size: 40px;
+/* Main Section */
+section {
+    background: #121212;
+    padding: 30px 20px;
     text-align: center;
-    margin-top: -100px;
-    color: white;
 }
 
+/* Icon */
+section > svg {
+    width: 55px;
+    height: 55px;
+    color: #1ed760;
+    margin-bottom: 8px;
+}
+
+/* Main Title */
+section > h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 5px 0;
+    letter-spacing: -0.5px;
+}
+
+/* Subtitle */
 section > h2 {
-    font-size: 20px;
-    text-align: center;
-    color: white;
-}
-section > h3 {
-    color: black;
-    background-color: lightgrey;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3b3b3;
+    margin: 5px 0 20px;
 }
 
-#playlist{
-    width: 500px;
-    text-align: center;
-    margin: auto;
+/* Playlist Container */
+#playlist {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+/* Playlist Items */
+#playlist h3 {
+    background: #242424;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 16px;
+    margin: 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    /* Align title and play icon */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Green Play Icon on the Right */
+#playlist h3::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 11px solid #1ed760;
+    flex-shrink: 0;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+}
+
+/* Hover Effect */
+#playlist h3:hover {
+    background: #333333;
+}
+
+/* Play Icon Hover Effect */
+#playlist h3:hover::after {
+    transform: scale(1.15);
+}
+
+/* Click Effect */
+#playlist h3:active {
+    background: green;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    section {
+        padding: 25px 16px;
+    }
+
+    section > svg {
+        width: 45px;
+        height: 45px;
+    }
+
+    section > h1 {
+        font-size: 28px;
+    }
+
+    section > h2 {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    #playlist h3 {
+        font-size: 14px;
+        padding: 14px;
+    }
 }
