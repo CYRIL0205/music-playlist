@@ -10,14 +10,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Main Section */
+
 section {
     background: #121212;
     padding: 30px 20px;
     text-align: center;
 }
 
-/* Icon */
+
 section > svg {
     width: 55px;
     height: 55px;
@@ -25,7 +25,7 @@ section > svg {
     margin-bottom: 8px;
 }
 
-/* Main Title */
+
 section > h1 {
     font-size: 32px;
     font-weight: 700;
@@ -33,7 +33,7 @@ section > h1 {
     letter-spacing: -0.5px;
 }
 
-/* Subtitle */
+
 section > h2 {
     font-size: 14px;
     font-weight: 400;
@@ -41,7 +41,7 @@ section > h2 {
     margin: 5px 0 20px;
 }
 
-/* Playlist Container */
+
 #playlist {
     width: 100%;
     max-width: 500px;
@@ -52,7 +52,7 @@ section > h2 {
     text-align: left;
 }
 
-/* Playlist Items */
+
 #playlist h3 {
     background: #242424;
     color: #ffffff;
@@ -65,13 +65,13 @@ section > h2 {
     cursor: pointer;
     transition: background 0.2s ease;
 
-    /* Align title and play icon */
+
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* Green Play Icon on the Right */
+
 #playlist h3::after {
     content: "";
     width: 0;
@@ -84,22 +84,22 @@ section > h2 {
     transition: transform 0.2s ease;
 }
 
-/* Hover Effect */
+
 #playlist h3:hover {
     background: #333333;
 }
 
-/* Play Icon Hover Effect */
+
 #playlist h3:hover::after {
     transform: scale(1.15);
 }
 
-/* Click Effect */
+
 #playlist h3:active {
     background: green;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 600px) {
     section {
         padding: 25px 16px;
